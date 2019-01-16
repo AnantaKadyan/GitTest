@@ -2,15 +2,17 @@ class Employee
 {
 	String name; // instance variables
 	String address;
-	int yearOfJoining;
-	Employee()  // non parameterised constructor
+	long yearJoined;
+
+	Employee( String name , String address , long yearJoined)
 	{
-		name="";
-		address="";
-		yearOfJoining=2000;
+		this.name = name;
+		this.address = address;
+		this.yearJoined = yearJoined;
 	}
-	void display()
+	
+	void display() // instance method
 	{
-		System.out.println(this.name+"\t\t"+this.yearOfJoining+"\t\t"+this.address+"\n");
+		System.out.println(name+"\t\t"+yearJoined+"\t\t"+address+"\n");
 	}
 }
