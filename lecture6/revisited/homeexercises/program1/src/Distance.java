@@ -3,34 +3,34 @@ import java.util.*;
 class Distance{
 	float feet;
 	float inch;
-	float f;
-	float i;
+
 	Distance(){
 		this.feet=0;
 		this.inch=0;
 
 	}
-	Distance(float f , float i){
-		this.feet=f;
-		this.inch=i;
-	}
-	void getDistance(){
-		this.feet = f;
-		this.inch = i;
+	Distance(float feet , float inch){
+		this.feet=feet;
+		this.inch=inch;
 	}
 
-	void setDistance(float f , float i){
-		feet =f;
-		inch =i;
+	void setvaluefeet(float feet){
+		this.feet = feet;
 	}
-	void setDistance(){
-		System.out.println("entered distance is "+ feet +" feet " +inch+" inches ");
+	void setvalueinch(float inch){
+		this.inch = inch;
 	}
-	void sum(Distance d){
-		float sfeet = this.feet + d.feet;
-		float sinch = this.inch + d.inch + (inch/12);
-		inch = inch%12;
-
-		System.out.println(" total distance is "+ sfeet + " feet " + sinch +"inches");
-	}
+	 float getvaluefeet(){
+	 	return feet;
+	 }
+	 float getvalueinch(){
+	 	return inch;
+    }
+	
+	void sum(Distance d1 , Distance d2){
+		float sfeet = d1.feet + d2.feet;
+		float sinch = d1.inch + d2.inch + (inch/12);
+	
+		System.out.println("sum of distances is " + sfeet + "feet"+ sinch + "inches");
+	}	
 }

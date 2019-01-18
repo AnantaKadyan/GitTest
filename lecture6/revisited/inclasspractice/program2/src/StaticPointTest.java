@@ -18,7 +18,7 @@ class StaticPointTest
 		p1.setValueX(x1);
 		p1.setValueY(y1);
 		p2.setValueX(x2);
-		p2.setValueY(y1);
+		p2.setValueY(y2);
 		float dist = p1.calcDistance(p2);
 		System.out.println("The distance between the two points is: "+String.format("%7.2f",dist));
 	}
