@@ -45,7 +45,7 @@ public static void main(String[] args) {
 			}  break;
 
 			case 5 : try{
-				String x = null;
+				String x = nulls;
 				setTitle(x);
 			    } catch(IllegalArgumentException e){ System.out.println(e); }
 
